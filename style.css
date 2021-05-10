@@ -3,8 +3,9 @@ html, body {
     padding: 0;
     height: 100%;
 }
-
 .halloworld{
+    height: 200px;
+    width: 200px;
     background-color: orange;
     margin:0 auto;
     position:relative;
@@ -12,9 +13,11 @@ html, body {
     left: 5px;
     text-align: center;
 }
-.box{
+
+[class^=box]{
     height: 200px;
     width: 200px;
+    position:absolute;
 }
 .box1{
 background-color:red;
@@ -27,12 +30,11 @@ background:rgb(0, 255, 85);
 position:absolute;
 bottom:10px;
 left:10px;
-z-index:2;
 }
 .box3{
 background: rgb(0, 183, 255);
 position:absolute;
 bottom:20px;
 left:20px;
-z-index:1;
+z-index:-1;
 }
